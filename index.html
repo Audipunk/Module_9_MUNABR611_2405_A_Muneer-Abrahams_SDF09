@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,21 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="./output.css" rel="stylesheet">
 </head>
+
 <body>
-    <footer class="bg-[#659f8f] dark:bg-[#313131]">
+    <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
+
+    <footer class="bg-white border rounded-md dark:bg-[#413131 dark:bg-[#313131]">
         <div class="container">
-            <footer class="bg-[#659f8f] dark:bg-[#313131]">
+            
+            <footer class="bg-[#313131] dark:bg-[#313131]">
+                
                 <div class="container px-6 py-12 mx-auto">
                     <div `class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4"></div>
                         <div class="sm:col-span-2">
-                            <h1 class="max-w-lg text-xl font-semibold tracking-tight text-[#313131] xl:text-2xl dark:text-white" >Subscribe.</h1>
+                            <h1 class="max-w-lg text-xl font-semibold tracking-tight text-[#313131] xl:text-2xl dark:text-white" >Subscribe to our newsletter for updates.</h1>
                             <div class="flex">
-                                <input id="email-address" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-4 py-2 text-[#313131]  shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6 focus:ring focus:ring-opacity-40 focus:ring-[#d86943]" placeholder="Enter your email">
+                                <input id="email-address" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-4 py-2 text-[#313131]  shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6 focus:ring focus:ring-opacity-20 focus:ring-[#d86943]" placeholder="Enter your email">
                                 <button type="submit" 
                                   class="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
                                   Subscribe</button>
@@ -25,23 +31,33 @@
                                 </button>
                             </div>
                         </div>
-                        <div>
-                            <p class="text-[#313131]">Quick Link</p>
+                        <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2"></dl>
+                        <div>                              
+                                  <div><dt className="mt-4 font-semibold text-white">Quick Link</dt>
+                                    <dd className="mt-2 leading-7 text-gray-400">    
+                                        <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2"></dl>
+                                        <div className="flex flex-col items-start"></div>                                              
                             <div class="flex">
-                                <a href="#">Home</a>
-                                <a href="#">Who We Are</a>
-                                <a href="#">Our Philosophy</a>
+                               <div><a href="#">Home</a></div> 
+                               <div><a href="#">Who We Are</a></div> 
+                               <div>  <a href="#">Our Philosophy</a></div> 
                             </div>
                         </div>
+
+
                         <div>
-                            <p class="text-[#313131]">Technologies</p>
+                            <div className="flex flex-col items-start"></div>
+                            <dt className="mt-4 font-semibold text-white">Technologies</dt>
+                            <dd className="mt-2 leading-7 text-gray-400">                      
                             <div class="">
                                 <a href="#">HTML</a>
                                 <a href="#">CSS</a>
                                 <a href="#">JavaScript</a>
                             </div>
+                            
                         </div>
                     </div>
+                    
                     
                     <hr class="my-6 border-[#d86943]">
                     
